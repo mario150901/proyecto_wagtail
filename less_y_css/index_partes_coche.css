@@ -1,0 +1,111 @@
+html {
+  background-color: #a387f1;
+}
+
+#mapa-imagenes {
+  margin-left: 280px;
+  position: relative
+}
+
+ul.notas li {
+  position: absolute;
+}
+
+ul.notas li {
+  border: medium solid black;
+  list-style: none;
+}
+
+ul.notas li:hover p {
+  display: block;
+}
+
+ul.notas li#nota1 {
+  width: 160px; height: 170px; top: 430px; left: 350px;
+}
+ul.notas li#nota2 {
+  width: 500px; height: 300px; bottom: 120px; left: 1060px;
+}
+ul.notas li#nota3 {
+  width: 60px; height: 60px; top: 360px; left: 620px;
+}
+
+ul.notas li p {
+  position: absolute;
+  top: 100%;
+
+  background: #FFF;
+  opacity: 0.75;
+
+  margin: 10px 0 0 0;
+  padding: 0.3em;
+}
+
+ul.notas li {
+  list-style: none;
+  display: none;
+  position: absolute;
+  border: medium solid black;
+}
+div.mapa_imagen:hover ul.notas li {
+  display: block;
+}
+ul.notas li p {
+  margin: 10px 0 0 0;
+  padding: .3em;
+  display: none;
+  background: rgb(243, 220, 9);
+  opacity: 0.65;
+  position: absolute;
+  top: 100%;
+}
+ul.notas li:hover p {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 125px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8c429b;
+  border: #111;
+}
+li {
+  float: left;
+  border: 1px solid black;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 132px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #bb55cf;
+}
+.active {
+  background-color: #4CAF50;
+}
+h1 {
+  margin-top: 50px;
+}
+div.coche {
+  float: left;
+  width: 110px;
+  height: 65px;
+  background: url("../img/sprite_formula_1.png") left center;
+  margin: 0 auto;
+  animation: formula 0.75s steps(6, end) infinite;
+}
+@keyframes formula {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -705px 0px;
+  }
+}

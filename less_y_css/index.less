@@ -1,0 +1,82 @@
+@bgcolor_html: rgb(163, 135, 241);
+@list_style_ul: none;
+@margin_left_ul: 136px;
+@margin_right_ul: 30px;
+@padding_ul: 0;
+@overflow_ul: hidden;
+@bgcolor_ul: rgb(140, 66, 155);
+@border_ul: #111;
+@float_li: left;
+@border_li: 1px solid black;
+@display_li_a: block;
+@color_li_a: black;
+@text_align_li_a: center;
+@padding_li_a: 20px 130px;
+@text_decoration_li_a: none;
+@bgcolor_li_a_hover: rgb(187, 85, 207);
+@bgcolor_active: #4CAF50;
+@margin_top_h1: 50px;
+@float_div_coche: left;
+@width_div_coche: 110px;
+@height_div_coche: 65px;
+@hoja_sprite: url("../img/sprite_formula_1.png") left center;
+@margin_div_coche: 0 auto;
+@animacion_div_coche: formula 0.75s steps(6, end) infinite;
+
+html {
+    background-color: @bgcolor_html;
+}
+
+ul {
+list-style-type: @list_style_ul;
+margin-left: @margin_left_ul;
+margin-right: @margin_right_ul;
+margin-bottom: 0;
+padding: @padding_ul;
+overflow: @overflow_ul;
+background-color: @bgcolor_ul;
+border: @border_ul;
+}
+
+li {
+float: @float_li;
+border:@border_li;
+}
+
+li a {
+display: @display_li_a;
+color: @color_li_a;
+text-align: @text_align_li_a;
+padding: @padding_li_a;
+text-decoration: @text_decoration_li_a;
+}
+
+li a:hover:not(.active) {
+background-color: @bgcolor_li_a_hover;
+}
+
+.active {
+background-color: @bgcolor_active;
+}
+
+h1 {
+margin-top: @margin_top_h1;
+}
+
+ div.coche {
+    float: @float_div_coche;
+    width: @width_div_coche;
+    height: @height_div_coche;
+    background: @hoja_sprite;
+    margin: @margin_div_coche;
+    animation: @animacion_div_coche;
+  }
+
+  @keyframes formula {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -705px 0px;
+    }
+  }
